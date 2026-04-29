@@ -19,7 +19,6 @@ def run_cmd(cmd):
 
     def replace_snapshot(match):
         yml_path = match.group(1)
-
         try:
             content = Path(yml_path).read_text(encoding="utf-8")
         except Exception as e:
@@ -28,20 +27,14 @@ def run_cmd(cmd):
         # 缩进展示 YAML 内容
         indented = "\n".join("    " + line for line in content.splitlines())
         return f"- Snapshot Content:\n{indented}"
-
     output = re.sub(pattern, replace_snapshot, output)
 
     return output
 
 # a = run_cmd('playwright-cli open https://demo.playwright.dev/todomvc/ --headed')
-
 a = run_cmd('playwright-cli snapshot')
-
 # a = run_cmd('playwright-cli screenshot')
-
 # a = run_cmd('playwright-cli fill e8 "洗衣服" --submit')
-
-
 # a = run_cmd('playwright-cli tab-select 1')
 
 print(a)
