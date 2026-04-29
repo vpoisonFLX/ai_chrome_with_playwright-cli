@@ -1,7 +1,7 @@
 import requests
 import json
 
-API_KEY = "75bfa8d5d859496faafa32c510c770f8.Rjl161QeXMWWGWlU"
+API_KEY = ""
 URL = "https://open.bigmodel.cn/api/paas/v4/chat/completions"
 
 def ask_glm(system_prompt, user_prompt):
