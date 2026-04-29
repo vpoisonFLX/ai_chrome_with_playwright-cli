@@ -112,7 +112,6 @@ if __name__ == "__main__":
 
     # 执行
     run_agent(total_goal, attention)
-
     # attention = "此为待办事项网页，请准确区分代办和已办"
     # run_agent("添加一个洗车的代做任务", attention)
     # run_agent("我刚才洗过车了，之后我还要洗衣服和拿快递", attention)
