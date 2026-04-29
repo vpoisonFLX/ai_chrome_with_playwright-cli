@@ -1,0 +1,21 @@
+# 忽略 .playwright-cli 目录下所有内容
+.playwright-cli/*
+
+# 但保留目录本身（关键）
+!.playwright-cli/
+
+# 可选：保留一个占位文件（推荐）
+!.playwright-cli/.gitkeep
+
+# Python 缓存
+__pycache__/
+*.pyc
+
+# 常见 Python 忽略项
+*.pyc
+*.pyo
+*.pyd
+.env
+venv/
+.idea/
+.vscode/
