@@ -21,7 +21,6 @@ def ask_glm(system_prompt, user_prompt):
             "temperature": 0.3  # 太低可能没有创造性导致陷入循环
         }
     )
-    # print(resp.json()["choices"][0]["message"]["reasoning_content"])
     return resp.json()["choices"][0]["message"]["content"]
 
 import subprocess
@@ -113,9 +112,6 @@ if __name__ == "__main__":
 
     # 执行
     run_agent(total_goal, attention)
-
-
-
 
     # attention = "此为待办事项网页，请准确区分代办和已办"
     # run_agent("添加一个洗车的代做任务", attention)
