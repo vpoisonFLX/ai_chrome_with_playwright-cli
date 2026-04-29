@@ -2,9 +2,7 @@ import tkinter as tk
 from tkinter import ttk, messagebox
 import threading
 from threading import Event
-
 from ai_browser import run_cmd, run_agent   # 你的核心逻辑
-
 
 import sys
 
@@ -161,3 +159,5 @@ result_text.config(state="disabled")
 sys.stdout = TextRedirector(result_text)
 
 root.mainloop()
+
+
